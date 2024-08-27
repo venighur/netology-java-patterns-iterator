@@ -15,11 +15,9 @@ public class Randoms implements Iterable<Integer> {
     @Override
     public Iterator<Integer> iterator() {
         return new Iterator<>() {
-            int next = min + random.nextInt(max - min + 1);
-
             @Override
             public boolean hasNext() {
-                return next < 100;
+                return true;
             }
 
             @Override
